@@ -7,7 +7,6 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "preversion": "npm run format && npm run build",
-    "postversion": "git push && git push --tags",
     "prepublishOnly": "npm run format && npm run test && npm run build",
     "test": "jest",
     "build": "rimraf ./dist && rollup --config",
