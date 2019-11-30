@@ -1,6 +1,6 @@
 {
-  "name": "notry",
-  "version": "0.0.1",
+  "name": "no-try",
+  "version": "1.0.0",
   "description": "Clean up code by removing try-catch-finally blocks.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
