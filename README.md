@@ -1,5 +1,15 @@
-<h1 style="text-align: center">🚀 No-Try 🚀</h1>
-<p style="text-align: center">Clean up your code base by removing those ugly try-catch-finally blocks!</p>
+<h1 align="center">🚀 No-Try 🚀</h1>
+<p align="center">Clean up your code base by removing those ugly try-catch-finally blocks!</p>  
+
+---
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/no-try"><img src="https://img.shields.io/badge/npm-no--try-brightgreen.svg" /></a>
+  <a href="https://www.npmjs.com/package/no-try"><img src="https://img.shields.io/npm/v/no-try.svg" /></a>
+  <a href="https://www.npmjs.com/package/no-try"><img src="https://img.shields.io/npm/dt/no-try.svg" /></a>
+  <a href="https://www.npmjs.com/package/no-try"><img src="https://img.shields.io/travis/coly010/notry.svg" /></a>
+  <a href="https://www.npmjs.com/package/no-try"><img src="https://img.shields.io/npm/l/no-try.svg" /></a>
+</p>
 
 ## 😍 About
 
@@ -72,10 +82,10 @@ const { result, error } = noTry(
 );
 
 // Handle methods that return a Promise without a custom error handler
-const { result, error } = noTryAsync(() => myAsyncThrowableMethod());
+const { result, error } = await noTryAsync(() => myAsyncThrowableMethod());
 
 // Handle methods that return a Promise with a custom error handler
-const { result, error } = noTryAsync(
+const { result, error } = await noTryAsync(
   () => myAsyncThrowableMethod(),
   error => {
     console.log(error);
