@@ -30,6 +30,11 @@
     "url": "https://github.com/coly010/notry.git"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/commit-analyzer": "^6.3.3",
+    "@semantic-release/git": "^7.0.18",
+    "@semantic-release/npm": "^5.3.4",
+    "@semantic-release/release-notes-generator": "^7.3.5",
     "@types/jest": "^24.0.23",
     "codacy-coverage": "^3.4.0",
     "husky": "^3.1.0",
@@ -39,9 +44,9 @@
     "rimraf": "^3.0.0",
     "rollup": "^1.27.5",
     "rollup-plugin-typescript2": "^0.25.2",
+    "semantic-release": "^15.13.31",
     "ts-jest": "^24.2.0",
-    "typescript": "^3.7.2",
-    "semantic-release": "^15.13.31"
+    "typescript": "^3.7.2"
   },
   "jest": {
     "moduleFileExtensions": [
