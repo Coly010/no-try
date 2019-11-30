@@ -1,0 +1,67 @@
+{
+  "name": "notry",
+  "version": "0.0.1",
+  "description": "Clean up code by removing try-catch-finally blocks.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "preversion": "npm run format && npm run build",
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "npm run format && npm run test && npm run build",
+    "test": "jest",
+    "build": "rimraf ./dist && rollup --config",
+    "format": "prettier --write src/**/*.ts tests/**/*.ts src/**/*.js tests/**/*.js *.js *.ts"
+  },
+  "keywords": [
+    "try",
+    "catch",
+    "clean",
+    "code",
+    "javascript",
+    "typescript",
+    "node"
+  ],
+  "author": "Colum Ferry",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coly010/notry.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "codacy-coverage": "^3.4.0",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.27.5",
+    "rollup-plugin-typescript2": "^0.25.2",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "ts-jest"
+    },
+    "testRegex": "/tests/.*\\.spec\\.(ts|tsx)$",
+    "coverageDirectory": "./coverage",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.git
+coverage
+tests
+benchmark
+src
+.gitignore
+.travis.yml
+CODE_OF_CONDUCT.md
+tsconfig.json
+rollup.config.js
