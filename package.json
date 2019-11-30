@@ -1,6 +1,6 @@
 {
   "name": "no-try",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Clean up code by removing try-catch-finally blocks.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -11,7 +11,8 @@
     "prepublishOnly": "npm run format && npm run test && npm run build",
     "test": "jest",
     "build": "rimraf ./dist && rollup --config",
-    "format": "prettier --write src/**/*.ts tests/**/*.ts src/**/*.js tests/**/*.js *.js *.ts"
+    "format": "prettier --write src/**/*.ts tests/**/*.ts src/**/*.js tests/**/*.js *.js *.ts",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "try",
@@ -39,7 +40,8 @@
     "rollup": "^1.27.5",
     "rollup-plugin-typescript2": "^0.25.2",
     "ts-jest": "^24.2.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.2",
+    "semantic-release": "^15.13.31"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -63,5 +65,20 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": true
+        }
+      ],
+      "@semantic-release/changelog",
+      "@semantic-release/git"
+    ],
+    "branch": "master"
   }
 }
