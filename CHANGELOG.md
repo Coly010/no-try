@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/coly010/notry/compare/v1.0.0...v1.0.1) (2019-11-30)
+
+
+### Bug Fixes
+
+* ci build failing ([c84a082](https://github.com/coly010/notry/commit/c84a0825b8ce94fae3223f9bf86a6fb04c859e0b))
+
 # 1.0.0 (2019-11-30)
 
 
