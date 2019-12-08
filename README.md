@@ -47,10 +47,10 @@ const { result, error } = noTry(
 );
 
 // Handle methods that return a Promise without a custom error handler
-const { result, error } = noTryAsync(() => myAsyncThrowableMethod());
+const { result, error } = await noTryAsync(() => myAsyncThrowableMethod());
 
 // Handle methods that return a Promise with a custom error handler
-const { result, error } = noTryAsync(
+const { result, error } = await noTryAsync(
   () => myAsyncThrowableMethod(),
   error => {
     console.log(error);
