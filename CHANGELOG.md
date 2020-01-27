@@ -1,3 +1,11 @@
+## [1.1.3](https://github.com/coly010/notry/compare/v1.1.2...v1.1.3) (2020-01-27)
+
+
+### Bug Fixes
+
+* export tuple correctly ([d4fbd09](https://github.com/coly010/notry/commit/d4fbd09238b49b2c80c396bee8ec3e1b27ab43f8))
+* export tuple correctly ([5377b9b](https://github.com/coly010/notry/commit/5377b9b721922892ff590712097bee92efae7a2b))
+
 ## [1.1.2](https://github.com/coly010/notry/compare/v1.1.1...v1.1.2) (2020-01-27)
 
 
