@@ -1,0 +1,5 @@
+{
+  "main": "../dist/tuple/index.js",
+  "module": "../dist/tuple/index.esm.js",
+  "types": "../dist/tuple/index.d.ts"
+}
