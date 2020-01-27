@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/coly010/notry/compare/v1.0.1...v1.1.0) (2020-01-27)
+
+
+### Features
+
+* add support for tuple return [#3](https://github.com/coly010/notry/issues/3) ([e86c65e](https://github.com/coly010/notry/commit/e86c65e8c7e18d053ea07666f22a72ac50ee6efa))
+* add support for tuple return [#3](https://github.com/coly010/notry/issues/3) ([29052fa](https://github.com/coly010/notry/commit/29052fa7c6419d6d8fcefd9a5a41108336687b7b))
+
 ## [1.0.1](https://github.com/coly010/notry/compare/v1.0.0...v1.0.1) (2019-11-30)
 
 
