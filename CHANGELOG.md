@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/coly010/notry/compare/v1.1.0...v1.1.1) (2020-01-27)
+
+
+### Bug Fixes
+
+* tuple folder path for build ([17fd35d](https://github.com/coly010/notry/commit/17fd35d79f12cbfee16c51b44c9fa2c018c6fe00))
+* tuple folder path for build ([11bf028](https://github.com/coly010/notry/commit/11bf028e25dca779291266a7a05e4ec47c4c98e8))
+
 # [1.1.0](https://github.com/coly010/notry/compare/v1.0.1...v1.1.0) (2020-01-27)
 
 
