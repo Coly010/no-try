@@ -1,3 +1,20 @@
+# [2.0.0](https://github.com/coly010/notry/compare/v1.1.3...v2.0.0) (2020-08-27)
+
+
+### Features
+
+* Use only tuple to promote error handling ([#11](https://github.com/coly010/notry/issues/11)) ([9b69fb9](https://github.com/coly010/notry/commit/9b69fb9965f6d00afe80c8c849e4c75a95d9844b))
+
+
+### BREAKING CHANGES
+
+* Remove object destructuring
+Invert tuple order to promote error handling
+
+* Update rollup.config.js
+
+* Update index.spec.ts
+
 ## [2.0.0](https://github.com/coly010/notry/compare/v1.1.3...v2.0.0) (YYY-MM-DD)
 
 ### Breaking Changes
