@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/coly010/notry/compare/v1.1.3...v2.0.0) (YYY-MM-DD)
+
+
+### Breaking Changes (no-try/tuple)
+
+The Node.js `callback(err, res)` pattern makes sure that the error object is explicitly available and needs to be checked first before expecting the response object. Hence, ignoring the error object requires intentionally ignoring the first argument.
+
+With the goal of making it simpler to adopt better error handling practices, the de-facto approach of this library is now `[err, res]` compared to the `[res, err]` format in versions `v1.1.x`.
+
+* invert tuple ordering ([to be updated](https://github.com/coly010/notry/commit/d4fbd09238b49b2c80c396bee8ec3e1b27ab43f8))
+
 ## [1.1.3](https://github.com/coly010/notry/compare/v1.1.2...v1.1.3) (2020-01-27)
 
 

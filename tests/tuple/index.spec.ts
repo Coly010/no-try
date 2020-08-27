@@ -12,7 +12,7 @@ describe("noTry Tuple", () => {
 
     it("should return result of throwable function without error when successful", () => {
       // Act
-      const [result, error] = noTry(() => throwable());
+      const [error, result] = noTry(() => throwable());
 
       // Assert
       expect(result).toEqual("Hello World");
@@ -21,7 +21,7 @@ describe("noTry Tuple", () => {
 
     it("should return result of throwable function with error when unsuccessful", () => {
       // Act
-      const [result, error] = noTry(() => throwable(true));
+      const [error, result] = noTry(() => throwable(true));
 
       // Assert
       expect(result).toBeFalsy();
@@ -35,7 +35,7 @@ describe("noTry Tuple", () => {
         console.log(error.message);
       };
       // Act
-      const [result, error] = noTry(() => throwable(true), weFoundError);
+      const [error, result] = noTry(() => throwable(true), weFoundError);
 
       // Assert
       expect(result).toBeFalsy();
@@ -57,7 +57,7 @@ describe("noTry Tuple", () => {
 
     it("should return result of throwable function without error when successful", async () => {
       // Act
-      const [result, error] = await noTryAsync(() => asyncThrowable());
+      const [error, result] = await noTryAsync(() => asyncThrowable());
 
       // Assert
       expect(result).toEqual("Hello World");
@@ -66,7 +66,7 @@ describe("noTry Tuple", () => {
 
     it("should return result of throwable function with error when unsuccessful", async () => {
       // Act
-      const [result, error] = await noTryAsync(() => asyncThrowable(true));
+      const [error, result] = await noTryAsync(() => asyncThrowable(true));
 
       // Assert
       expect(result).toBeFalsy();
@@ -80,7 +80,7 @@ describe("noTry Tuple", () => {
         console.log(error.message);
       };
       // Act
-      const [result, error] = await noTryAsync(() => asyncThrowable(true), weFoundError);
+      const [error, result] = await noTryAsync(() => asyncThrowable(true), weFoundError);
 
       // Assert
       expect(result).toBeFalsy();

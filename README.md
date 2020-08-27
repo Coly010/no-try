@@ -113,10 +113,10 @@ const noTry = require("no-try/tuple").noTry;
 const noTryAsync = require("no-try/tuple").noTryAsync;
 
 // Without a custom error handler
-const [result, error] = noTry(() => myThrowableMethod());
+const [error, result] = noTry(() => myThrowableMethod());
 
 // With a custom error handler
-const [res, err] = noTry(
+const [err, res] = noTry(
   () => myThrowableMethod(),
   error => {
     console.log(error);
@@ -124,10 +124,10 @@ const [res, err] = noTry(
 );
 
 // Handle methods that return a Promise without a custom error handler
-const [item, err2] = await noTryAsync(() => myAsyncThrowableMethod());
+const [err2, item] = await noTryAsync(() => myAsyncThrowableMethod());
 
 // Handle methods that return a Promise with a custom error handler
-const [res2, err3] = await noTryAsync(
+const [err3, res2] = await noTryAsync(
   () => myAsyncThrowableMethod(),
   error => {
     console.log(error);
@@ -148,10 +148,10 @@ TS:
 import { noTry, noTryAsync } from "no-try/tuple";
 
 // Without a custom error handler
-const [result, error] = noTry(() => myThrowableMethod());
+const [error, result] = noTry(() => myThrowableMethod());
 
 // With a custom error handler
-const [res, err] = noTry(
+const [err, res] = noTry(
   () => myThrowableMethod(),
   error => {
     console.log(error);
@@ -159,10 +159,10 @@ const [res, err] = noTry(
 );
 
 // Handle methods that return a Promise without a custom error handler
-const [item, err2] = await noTryAsync(() => myAsyncThrowableMethod());
+const [err2, item] = await noTryAsync(() => myAsyncThrowableMethod());
 
 // Handle methods that return a Promise with a custom error handler
-const [res2, err3] = await noTryAsync(
+const [err3, res2] = await noTryAsync(
   () => myAsyncThrowableMethod(),
   error => {
     console.log(error);
