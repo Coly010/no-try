@@ -27,22 +27,6 @@ describe("noTry Tuple", () => {
       expect(result).toBeFalsy();
       expect(error.message).toEqual("Catch me");
     });
-
-    it("should return result of throwable function with error when unsuccessful and perform a unique handle", () => {
-      // Arrange
-      const consoleSpy = spyOn(console, "log");
-      let weFoundError = (error: Error) => {
-        console.log(error.message);
-      };
-      // Act
-      const [error, result] = noTry(() => throwable(true), weFoundError);
-
-      // Assert
-      expect(result).toBeFalsy();
-      expect(error.message).toEqual("Catch me");
-      expect(consoleSpy).toHaveBeenCalled();
-      expect(consoleSpy).toHaveBeenCalledWith("Catch me");
-    });
   });
 
   describe("Async Tests", () => {
@@ -71,22 +55,6 @@ describe("noTry Tuple", () => {
       // Assert
       expect(result).toBeFalsy();
       expect(error.message).toEqual("Catch me");
-    });
-
-    it("should return result of throwable function with error when unsuccessful and perform a unique handle", async () => {
-      // Arrange
-      const consoleSpy = spyOn(console, "log");
-      let weFoundError = (error: Error) => {
-        console.log(error.message);
-      };
-      // Act
-      const [error, result] = await noTryAsync(() => asyncThrowable(true), weFoundError);
-
-      // Assert
-      expect(result).toBeFalsy();
-      expect(error.message).toEqual("Catch me");
-      expect(consoleSpy).toHaveBeenCalled();
-      expect(consoleSpy).toHaveBeenCalledWith("Catch me");
     });
   });
 });
