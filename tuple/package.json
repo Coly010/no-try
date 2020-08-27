@@ -1,5 +1,0 @@
-{
-  "main": "./tuple/index.js",
-  "module": "./tuple/index.esm.js",
-  "types": "./tuple/index.d.ts"
-}
