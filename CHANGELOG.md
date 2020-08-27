@@ -8,23 +8,11 @@
 
 ### BREAKING CHANGES
 
-* Remove object destructuring
-Invert tuple order to promote error handling
-
-* Update rollup.config.js
-
-* Update index.spec.ts
-
-## [2.0.0](https://github.com/coly010/notry/compare/v1.1.3...v2.0.0) (YYY-MM-DD)
-
-### Breaking Changes
-
 The Node.js `callback(err, res)` pattern makes sure that the error object is explicitly available and needs to be checked first before expecting the response object. Hence, ignoring the error object requires intentionally ignoring the first argument.
 
 With the goal of making it simpler to adopt better error handling practices, the de-facto approach of this library is now `[err, res]` compared to the `[res, err]` and `{ error, result }` formats in previous versions.
 
-- invert tuple ordering ([to be updated](https://github.com/coly010/notry/commit/d4fbd09238b49b2c80c396bee8ec3e1b27ab43f8))
-- remove object destructuring ([to be updated](https://github.com/coly010/notry/commit/d4fbd09238b49b2c80c396bee8ec3e1b27ab43f8))
+- invert tuple ordering ([9b69fb9](https://github.com/coly010/notry/commit/9b69fb9965f6d00afe80c8c849e4c75a95d9844b))
 
 ## [1.1.3](https://github.com/coly010/notry/compare/v1.1.2...v1.1.3) (2020-01-27)
 
