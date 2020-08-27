@@ -1,6 +1,6 @@
 import { noTry, noTryAsync } from "../src";
 
-describe("noTry Tuple", () => {
+describe("noTry", () => {
   describe("Sync Tests", () => {
     const throwable = (error: boolean = false) => {
       if (error) {
