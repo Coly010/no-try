@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/coly010/notry/compare/v2.1.0...v2.1.1) (2020-08-28)
+
+
+### Reverts
+
+* Revert "feat: make use of export name without tuple qualifier (#13)" (#14) ([30ec981](https://github.com/coly010/notry/commit/30ec9811c0e6ef2d10b105bbfb8e0c28e1e4200a)), closes [#13](https://github.com/coly010/notry/issues/13) [#14](https://github.com/coly010/notry/issues/14)
+
 # [2.1.0](https://github.com/coly010/notry/compare/v2.0.0...v2.1.0) (2020-08-28)
 
 
