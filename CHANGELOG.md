@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/coly010/notry/compare/v2.0.0...v2.1.0) (2020-08-28)
+
+
+### Features
+
+* make use of export name without tuple qualifier ([#13](https://github.com/coly010/notry/issues/13)) ([e26757c](https://github.com/coly010/notry/commit/e26757cb08063d6ffb6a23f5b1ed45e0b515b485))
+
 # [2.0.0](https://github.com/coly010/notry/compare/v1.1.3...v2.0.0) (2020-08-27)
 
 
