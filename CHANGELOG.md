@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/coly010/notry/compare/v2.1.1...v3.0.0) (2020-08-28)
+
+
+### Features
+
+* remove tuple from type name ([#15](https://github.com/coly010/notry/issues/15)) ([b646aa7](https://github.com/coly010/notry/commit/b646aa77d4f62fcf464c45b18a5e3136256a08bd))
+
+
+### BREAKING CHANGES
+
+* Changed the type
+
 ## [2.1.1](https://github.com/coly010/notry/compare/v2.1.0...v2.1.1) (2020-08-28)
 
 
