@@ -1,7 +1,7 @@
-export type NoTryTupleResult<T> = [Error, T];
+export type NoTryResult<T> = [Error, T];
 
-export function noTry<T>(fn: () => T, handleErr: (error: Error) => void = error => null): NoTryTupleResult<T> {
-  const result: NoTryTupleResult<T> = [null, null];
+export function noTry<T>(fn: () => T, handleErr: (error: Error) => void = error => null): NoTryResult<T> {
+  const result: NoTryResult<T> = [null, null];
   try {
     result[1] = fn();
   } catch (err) {
@@ -14,8 +14,8 @@ export function noTry<T>(fn: () => T, handleErr: (error: Error) => void = error 
 export async function noTryAsync<T>(
   fn: () => Promise<T>,
   handleErr: (error: Error) => void = error => null
-): Promise<NoTryTupleResult<T>> {
-  const result: NoTryTupleResult<T> = [null, null];
+): Promise<NoTryResult<T>> {
+  const result: NoTryResult<T> = [null, null];
   try {
     result[1] = await fn();
   } catch (err) {
