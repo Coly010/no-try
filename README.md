@@ -23,46 +23,8 @@ Working in a code base where you can expect methods to `throw` can lead to situa
 
 ## 🎸 Usage
 
-#### JavaScript
-
 ```js
-const noTry = require("no-try").noTry;
-const noTryAsync = require("no-try").noTryAsync;
-
-// Without a custom error handler
-const [error, result] = noTry(() => myThrowableMethod());
-
-// With a custom error handler
-const [err, res] = noTry(
-  () => myThrowableMethod(),
-  error => {
-    console.log(error);
-  }
-);
-
-// Handle methods that return a Promise without a custom error handler
-const [err2, res2] = await noTryAsync(() => myAsyncThrowableMethod());
-
-// Handle methods that return a Promise with a custom error handler
-const [err3, res3] = await noTryAsync(
-  () => myAsyncThrowableMethod(),
-  error => {
-    console.log(error);
-  }
-);
-
-// Use result
-if (error || err || err2 || err3) {
-  // Show error alert
-}
-
-sendMyResultToMethod(result);
-```
-
-#### TypeScript
-
-```ts
-import { noTry, noTryAsync } from "no-try";
+const { noTry, noTryAsync } = require("no-try");
 
 // Without a custom error handler
 const [error, result] = noTry(() => myThrowableMethod());
