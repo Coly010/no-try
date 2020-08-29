@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/coly010/notry/compare/v3.0.0...v3.1.0) (2020-08-29)
+
+
+### Features
+
+* create alias for useTry ([#17](https://github.com/coly010/notry/issues/17)) ([#18](https://github.com/coly010/notry/issues/18)) ([1c3eb5e](https://github.com/coly010/notry/commit/1c3eb5eba9f966a601330baa74add28f0b255878))
+
 # [3.0.0](https://github.com/coly010/notry/compare/v2.1.1...v3.0.0) (2020-08-28)
 
 
