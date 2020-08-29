@@ -24,3 +24,6 @@ export async function noTryAsync<T>(
   }
   return result;
 }
+
+export const useTry = noTry;
+export const useTryAsync = noTryAsync;
