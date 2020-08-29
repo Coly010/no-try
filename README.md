@@ -23,52 +23,29 @@ Working in a code base where you can expect methods to `throw` can lead to situa
 
 ## 🎸 Usage
 
-#### JavaScript
+First we need to set up our import
+
+#### JavaScript (all)
 
 ```js
-const noTry = require("no-try").noTry;
-const noTryAsync = require("no-try").noTryAsync;
-
-// Without a custom error handler
-const [error, result] = noTry(() => myThrowableMethod());
-
-// With a custom error handler
-const [err, res] = noTry(
-  () => myThrowableMethod(),
-  error => {
-    console.log(error);
-  }
-);
-
-// Handle methods that return a Promise without a custom error handler
-const [err2, res2] = await noTryAsync(() => myAsyncThrowableMethod());
-
-// Handle methods that return a Promise with a custom error handler
-const [err3, res3] = await noTryAsync(
-  () => myAsyncThrowableMethod(),
-  error => {
-    console.log(error);
-  }
-);
-
-// Use result
-if (error || err || err2 || err3) {
-  // Show error alert
-}
-
-sendMyResultToMethod(result);
+const useTry = require("no-try").useTry;
+const useTryAsync = require("no-try").useTryAsync;
 ```
 
-#### TypeScript
+#### TypeScript or ES6+
 
 ```ts
-import { noTry, noTryAsync } from "no-try";
+import { useTry, useTryAsync } from "no-try";
+```
 
+#### Now let's use it
+
+```js
 // Without a custom error handler
-const [error, result] = noTry(() => myThrowableMethod());
+const [error, result] = useTry(() => myThrowableMethod());
 
 // With a custom error handler
-const [err, res] = noTry(
+const [err, res] = useTry(
   () => myThrowableMethod(),
   error => {
     console.log(error);
@@ -76,10 +53,10 @@ const [err, res] = noTry(
 );
 
 // Handle methods that return a Promise without a custom error handler
-const [err2, res2] = await noTryAsync(() => myAsyncThrowableMethod());
+const [err2, res2] = await useTryAsync(() => myAsyncThrowableMethod());
 
 // Handle methods that return a Promise with a custom error handler
-const [err3, res3] = await noTryAsync(
+const [err3, res3] = await useTryAsync(
   () => myAsyncThrowableMethod(),
   error => {
     console.log(error);
