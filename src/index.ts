@@ -1,35 +1,31 @@
-export type NoTryResult<T, E = Error> = [E | null, T | null];
+export type NoTryResult<T, E extends Error = Error> = [E, null] | [null, T];
 
-function noop(): void {
+function noop(): null {
   return null;
 }
 
-export function noTry<T, E = Error>(
+export function noTry<T, E extends Error = Error>(
   fn: () => T,
   handleErr: (error: E) => void = noop
 ): NoTryResult<T, E> {
-  const result: NoTryResult<T, E> = [null, null];
   try {
-    result[1] = fn();
+    return [null, fn()];
   } catch (err) {
-    result[0] = err;
-    handleErr(err);
+    handleErr(err as E);
+    return [err as E, null];
   }
-  return result;
 }
 
-export async function noTryAsync<T, E = Error>(
+export async function noTryAsync<T, E extends Error = Error>(
   fn: () => Promise<T>,
   handleErr: (error: E) => void = noop
 ): Promise<NoTryResult<T, E>> {
-  const result: NoTryResult<T, E> = [null, null];
   try {
-    result[1] = await fn();
+    return [null, await fn()];
   } catch (err) {
-    result[0] = err;
-    handleErr(err);
+    handleErr(err as E);
+    return [err as E, null];
   }
-  return result;
 }
 
 export const useTry = noTry;
