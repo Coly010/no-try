@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/coly010/notry/compare/v3.1.0...v3.2.0) (2024-04-12)
+
+
+### Features
+
+* add types for error response ([#39](https://github.com/coly010/notry/issues/39)) ([e2f8d51](https://github.com/coly010/notry/commit/e2f8d51c23484144b61d33e640460d2af94bc41c))
+
 # [3.1.0](https://github.com/coly010/notry/compare/v3.0.0...v3.1.0) (2020-08-29)
 
 
