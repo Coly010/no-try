@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/coly010/notry/compare/v3.2.0...v4.0.0) (2024-04-12)
+
+
+### Features
+
+* replace `null` with `undefined` ([#41](https://github.com/coly010/notry/issues/41)) ([9c71c95](https://github.com/coly010/notry/commit/9c71c959389dca23c02e9a7365b72c3b27c04cea))
+
+
+### BREAKING CHANGES
+
+* Return `undefined` instead of `null` for default value to allow reassignment when destructuring
+
 # [3.2.0](https://github.com/coly010/notry/compare/v3.1.0...v3.2.0) (2024-04-12)
 
 
