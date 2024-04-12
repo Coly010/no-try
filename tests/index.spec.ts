@@ -30,7 +30,7 @@ describe("noTry", () => {
 
     it("should return result of throwable function with error when unsuccessful and perform a unique handle", () => {
       // Arrange
-      const consoleSpy = spyOn(console, "log");
+      const consoleSpy = jest.spyOn(console, "log");
       let weFoundError = (error: Error) => {
         console.log(error.message);
       };
@@ -75,7 +75,7 @@ describe("noTry", () => {
 
     it("should return result of throwable function with error when unsuccessful and perform a unique handle", async () => {
       // Arrange
-      const consoleSpy = spyOn(console, "log");
+      const consoleSpy = jest.spyOn(console, "log");
       let weFoundError = (error: Error) => {
         console.log(error.message);
       };
@@ -121,7 +121,7 @@ describe("useTry", () => {
 
     it("should return result of throwable function with error when unsuccessful and perform a unique handle", () => {
       // Arrange
-      const consoleSpy = spyOn(console, "log");
+      const consoleSpy = jest.spyOn(console, "log");
       let weFoundError = (error: Error) => {
         console.log(error.message);
       };
@@ -166,7 +166,7 @@ describe("useTry", () => {
 
     it("should return result of throwable function with error when unsuccessful and perform a unique handle", async () => {
       // Arrange
-      const consoleSpy = spyOn(console, "log");
+      const consoleSpy = jest.spyOn(console, "log");
       let weFoundError = (error: Error) => {
         console.log(error.message);
       };
