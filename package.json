@@ -10,7 +10,7 @@
     "prepublishOnly": "npm run format && npm run test && npm run build",
     "test": "jest",
     "build": "rimraf ./dist && rollup --config",
-    "format": "prettier --write src/**/*.ts tests/**/*.ts src/**/*.js tests/**/*.js *.js *.ts",
+    "format": "prettier --write src/**/*.ts tests/**/*.ts *.js",
     "semantic-release": "semantic-release"
   },
   "keywords": [
@@ -29,24 +29,23 @@
     "url": "https://github.com/coly010/notry.git"
   },
   "devDependencies": {
-    "@rollup/plugin-multi-entry": "^3.0.0",
-    "@semantic-release/changelog": "^3.0.6",
-    "@semantic-release/commit-analyzer": "^6.3.3",
-    "@semantic-release/git": "^7.0.18",
-    "@semantic-release/npm": "^5.3.4",
-    "@semantic-release/release-notes-generator": "^7.3.5",
-    "@types/jest": "^24.0.23",
-    "codacy-coverage": "^3.4.0",
-    "husky": "^3.1.0",
-    "jest": "^24.9.0",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1",
-    "rimraf": "^3.0.0",
-    "rollup": "^1.27.5",
-    "rollup-plugin-typescript2": "^0.25.2",
-    "semantic-release": "^17.2.3",
-    "ts-jest": "^24.2.0",
-    "typescript": "^3.7.2"
+    "@rollup/plugin-multi-entry": "^6.0.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^12.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^12.0.0",
+    "@semantic-release/release-notes-generator": "^13.0.0",
+    "@types/jest": "^29.5.12",
+    "husky": "^9.0.11",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "pretty-quick": "^4.0.0",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.14.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "semantic-release": "^23.0.8",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5"
   },
   "jest": {
     "moduleFileExtensions": [

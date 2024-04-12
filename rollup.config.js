@@ -9,15 +9,15 @@ export default [
       {
         file: pkg.module,
         format: "es",
-        exports: "named"
+        exports: "named",
       },
       {
         file: pkg.main,
         format: "umd",
         name: "no-try",
         sourcemap: true,
-        exports: "named"
-      }
+        exports: "named",
+      },
     ],
 
     plugins: [
@@ -27,10 +27,10 @@ export default [
           compilerOptions: {
             module: "esnext",
             target: "esnext",
-            declaration: true
-          }
-        }
-      })
-    ]
-  }
+            declaration: true,
+          },
+        },
+      }),
+    ],
+  },
 ];
