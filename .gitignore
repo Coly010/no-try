@@ -4,3 +4,7 @@ coverage
 dist
 .DS_Store
 .idea
+index.esm.js
+index.js
+index.js.map
+index.d.ts
